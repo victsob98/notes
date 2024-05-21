@@ -1,0 +1,64 @@
+.note-view-container {
+  padding: 5px 16px 20px 16px;
+  gap: 24px;
+  opacity: 0px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.note-view-input {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: #7a7a7a 1px solid;
+  outline: none;
+  font-size: medium;
+  height: 10px;
+  color: #000000;
+  padding: 10px;
+}
+
+.note-view-input::placeholder {
+  color: #000000;
+  font-size: medium;
+}
+
+.note-view-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-view-textarea-container {
+  position: relative;
+  display: inline-block;
+}
+
+.note-view-textarea {
+  margin-top: 20px;
+  padding: 10px 16px 24px 16px;
+  gap: 16px;
+  border-radius: 12px;
+  opacity: 0px;
+  background-color: #ffffff;
+  width: 115%;
+  color: #000000;
+  padding-right: 50px;
+  min-height: 100px;
+  font-family: inherit;
+}
+
+.note-view-textarea:focus {
+  outline: #000000 1px solid;
+}
+
+.note-view-cancel {
+  background-color: #ffffff;
+  color: #0f75b8;
+}
+
+.action-button {
+  position: absolute;
+  top: 75%;
+  right: -90px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
