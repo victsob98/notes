@@ -26,13 +26,13 @@
 .app-header-container {
   align-items: center;
   display: flex;
-  gap: 3px;
+  gap: 6px;
   margin-bottom: 10px;
 }
 
 .app-header-icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .app-search-input {
@@ -65,4 +65,32 @@ li {
   gap: 12px;
   border-radius: 12px;
   opacity: 0px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset !important;
+  -webkit-text-fill-color: #333 !important;
+}
+
+/* Firefox */
+input:-moz-autofill,
+input:-moz-autofill:hover,
+input:-moz-autofill:focus,
+input:-moz-autofill:active {
+  background-color: #f5f5f5 !important;
+  color: #333 !important;
+  border: 1px solid #ccc;
+}
+
+/* Edge */
+input:-ms-autofill,
+input:-ms-autofill:hover,
+input:-ms-autofill:focus,
+input:-ms-autofill:active {
+  background-color: #f5f5f5 !important;
+  color: #333 !important;
+  border: 1px solid #ccc;
 }

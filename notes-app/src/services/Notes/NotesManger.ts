@@ -1,7 +1,7 @@
-import { Note } from "../types";
-import { LocalStorageManager } from "./LocalStorageManager";
+import { Note } from "../../types";
+import { LocalStorageManager } from "../LocalStorage/LocalStorageManager";
 import { v4 as uuidv4 } from "uuid";
-import { renderNotes } from "./RenderHelpers";
+import { renderInitialView, renderNotes } from "../Render/Renderers";
 
 export class NoteManager {
   private allNotes: Note[] = [];
@@ -50,5 +50,6 @@ export class NoteManager {
         note.description.toLowerCase().includes(filterText)
     );
     renderNotes(filteredNotes);
+    renderInitialView("No matching notes found");
   }
 }

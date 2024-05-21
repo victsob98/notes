@@ -4,3 +4,7 @@ export type Note = {
   description: string;
   date: string;
 };
+
+export type DebouncedFunction<T extends (...args: any[]) => any> = (
+  ...args: Parameters<T>
+) => void;

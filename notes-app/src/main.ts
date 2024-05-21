@@ -1,9 +1,9 @@
 import "./style.css";
 import { App } from "./components/App.ts";
 
-import { NoteManager } from "./services/NotesManger.ts";
-import { setupEventDelegation } from "./services/EventHandlers.ts";
-import { renderInitialView } from "./services/RenderHelpers.ts";
+import { NoteManager } from "./services/Notes/NotesManger.ts";
+import { setupEventDelegation } from "./services/Event/EventListeners.ts";
+import { renderInitialView } from "./services/Render/Renderers.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = App();
 

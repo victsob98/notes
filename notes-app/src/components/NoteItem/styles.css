@@ -25,6 +25,7 @@
 .buttonGroup {
   display: flex;
   gap: 8px;
+  max-height: 20px;
 }
 
 .note-button {

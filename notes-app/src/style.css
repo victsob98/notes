@@ -1,6 +1,8 @@
 @import "./components/EmptyContent/styles.css";
 @import "./components/NoteForm/styles.css";
 @import "./components/NoteItem/styles.css";
+@import "./components/ConfirmationModal/styles.css";
+
 @import "./styles/button.css";
 @import "./styles/typography.css";
 @import "./styles/scrollbar.css";

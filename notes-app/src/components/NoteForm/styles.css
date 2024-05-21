@@ -7,9 +7,13 @@
 
 .note-view-input {
   background-color: #ffffff;
-  border: none;
+  border-radius: 10px;
+  border: #7a7a7a 1px solid;
+  outline: none;
   font-size: medium;
+  height: 10px;
   color: #000000;
+  padding: 10px;
 }
 
 .note-view-input::placeholder {
@@ -20,6 +24,7 @@
 .note-view-title-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .note-view-textarea-container {
@@ -39,6 +44,10 @@
   padding-right: 50px;
   min-height: 100px;
   font-family: inherit;
+}
+
+.note-view-textarea:focus {
+  outline: #000000 1px solid;
 }
 
 .note-view-cancel {
